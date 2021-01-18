@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Events">
+		<message>COM_PROCURMENT_PROCURMENT_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields 
+		name="request"
+		addfieldpath="/administrator/components/com_freedomparkprocurment/models/fields">
+			<fieldset name="request">
+				<field
+					name="id"
+					type="event"
+					label="COM_PROCUREMENT_PROCUREMENT_FIELD_GREETING_LABEL"
+					description="COM_PROCUREMENT_PROCUREMENT_FIELD_GREETING_DESC"
+				/>
+			</fieldset>
+	</fields>
+
+</metadata>

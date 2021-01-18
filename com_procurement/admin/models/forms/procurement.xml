@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_procurement/models/rules">
+
+	<fieldset name="details" label="COM_PROCUREMENT_PROCUREMENT_DETAILS">
+
+		<field name="id" type="hidden"/>
+
+		<!-- <field name="greeting"
+			type="text"
+			label="COM_PROCUREMENT_PROCUREMENT_GREETING_LABEL"
+			description="COM_PROCUREMENT_PROCUREMENT_GREETING_DESC"
+			size="40"
+			class="inputbox validate-greeting"
+			required="true"
+				default=""/> -->
+
+		<field name="bid_number"
+			type="text"
+			label="Bid Number"
+			description="Used to idenitfy and track bid"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="bid_description"
+			type="textarea"
+			label="Service"
+			description="What the bid is about"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="closing_date"
+			type="text"
+			label="Closing Date"
+			description="When is it ending"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="download_link"
+			type="text"
+			label="Download Link"
+			description="Link to application forms."
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="brief_date"
+			type="text"
+			label="COMPULSORY BRIEF SESSION"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="awarded_to"
+			type="text"
+			label="Awarded To"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="bid_amount"
+			type="text"
+			label="Amount"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="bbbee_level"
+			type="text"
+			label="BBBEE Level"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+
+		<field name="total_points"
+			type="text"
+			label="Total Points"
+			size="40"
+			class="inputbox"
+			required="true"
+			default=""/>
+		
+		<field name="catid"
+			type="category"
+			extension="com_procurement"
+			class="inputbox"
+			default=""
+			label="COM_PROCUREMENT_PROCUREMENT_FIELD_CATID_LABEL"
+			description="COM_PROCUREMENT_PROCUREMENT_FIELD_CATID_DESC"
+			required="true">
+
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+
+		</field>
+
+	</fieldset>
+
+	<fields name="imageinfo">
+
+		<fieldset name="image-info"
+			label="COM_PROCUREMENT_IMAGE_FIELDS">
+
+			<field name="image"
+				type="media"
+				preview="tooltip"
+				label="COM_PROCUREMENT_PROCUREMENT_FIELD_IMAGE_LABEL"
+				description="COM_PROCUREMENT_PROCUREMENT_FIELD_IMAGE_DESC"/>
+
+			<field name="alt"
+				type="text"
+				label="COM_PROCUREMENT_PROCUREMENT_FIELD_ALT_LABEL"
+				description="COM_PROCUREMENT_PROCUREMENT_FIELD_ALT_DESC"
+				size="30"/>
+
+			<field name="caption"
+				type="text"
+				label="COM_PROCUREMENT_PROCUREMENT_FIELD_CAPTION_LABEL"
+				description="COM_PROCUREMENT_PROCUREMENT_FIELD_CAPTION_DESC"
+				size="30"/>
+
+		</fieldset>
+
+	</fields>
+
+	<fields name="params">
+
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS">
+
+			<field
+				name="show_category"
+				type="list"
+				label="COM_PROCUREMENT_PROCUREMENT_FIELD_SHOW_CATEGORY_LABEL"
+				description="COM_PROCUREMENT_PROCUREMENT_FIELD_SHOW_CATEGORY_DESC"
+				default="">
+
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+
+			</field>
+
+		</fieldset>
+	
+		<fieldset name="accesscontrol" label="COM_PROCUREMENT_FIELDSET_RULES">
+
+			<field name="asset_id" type="hidden" filter="unset"/>
+
+			<field
+				name="rules"
+				type="rules"
+				label="COM_PROCUREMENT_FIELD_RULES_LABEL"
+				filter="rules"
+				validate="rules"
+				class="inputbox"
+				component="com_procurement"
+				section="message"/>
+				
+		</fieldset>
+
+	</fields>
+</form>
